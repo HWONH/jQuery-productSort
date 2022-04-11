@@ -18,7 +18,7 @@ $(document).ready(function(){
                 <img src="img/img3.jpg" alt="이미지-01">
             </div>
             <div class="pd_info">
-                <h3 class="pd_title">TITLE</h3>
+                <h3 class="pd_tit">TITLE</h3>
                 <p class="pd_txt">CONTEXT</p>
                 <div class="pd_etc">
                     <span class="pd_price">PRICE</span>
@@ -38,7 +38,7 @@ $(document).ready(function(){
     function pd_fnc(){
         $(".pd_frame .pd_box").each(function(index){
             $(this).find(".pd_photo img").attr("src", "img/"+$pd_arr[index][0]+"");
-            $(this).find(".pd_info .pd_title").text($pd_arr[index][1]);
+            $(this).find(".pd_info .pd_tit").text($pd_arr[index][1]);
             $(this).find(".pd_info .pd_txt").text($pd_arr[index][2]);
             $(this).find(".pd_info .pd_price").text($pd_arr[index][3]);
             $(this).find(".pd_info .pd_date").text($pd_arr[index][4]);
